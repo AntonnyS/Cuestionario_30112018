@@ -1,0 +1,100 @@
+<html>
+<head>
+<title>T E S T</title>
+<script>
+function resultado() {
+  var p1, p2, p3, p4, p5, nota
+
+  <!-- 1ª pregunta -->
+  if (document.getElementById('p11').checked==true) {p1=1}
+  else {p1=0}
+  <!-- 2ª pregunta -->
+  if (document.getElementById('p22').checked==true) {p2=1}
+  else {p2=0}
+  <!-- 3ª pregunta -->
+  if (document.getElementById('p33').checked==true) {p3=1}
+  else {p3=0}
+  <!-- 4ª pregunta -->
+  if (document.getElementById('p44').checked==true) {p4=1}
+  else {p4=0}
+  <!-- 5ª pregunta -->
+  if(document.getElementById(p55).checked==true) {p5=1}
+  else {p5=0}
+  <!-- 6ª pregunta -->
+  if(document.getElementById(p62).checked==true) {p6=1}
+  else {p6=0}
+
+  nota=p1+p2+p3+p4+p5+p6;
+  alert(" Aciertos: " + nota);
+  location.reload();
+}
+</script>
+</head>
+<body>
+<h2>T E S T</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p>¿Que es git?</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> Es un sistema control de versiones</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> Es una aplicacion de modificacion</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p13"> La que solo crea jugos en la wed</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p14"> Es un controlador de aplicaciones.</p>
+
+<p>¿En que estados podemos localizar nuestros archivo en git?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> status, init, commit</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> committed, modofied, staged</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p23"> config, ls, cd ..</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p24"> ls, init, staged</p>
+
+<p>¿Cuales son los tipos de control de versiones en git?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p31"> externa, interna, centralizado</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p32"> distribuido, privado, externa.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> local, centralizado, distribuido.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> privado, interna, local.</p>
+
+<p>¿Cua es la funcion para la entrada de datos por teclado?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> write</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> document</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> alert</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> prompt</p>
+
+<p>¿Cuales son los datos principales?</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta5" id="p51"> entero, reales, caracteres, logicos</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p52"> numericos, alfabeticos</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p53"> alfanumericos, enteros</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p54"> simbolos,logicos</p>
+
+<p>¿Cuando hay un problema que no mas participan en la estructura secuencial?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p61"> calulos, procesos, salida </p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p62"> operaciones, entradas,salidas</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p63"> externas, salida, calculos</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p64"> externas, salidas, internas</p>
+
+<p>¿Cuando se emplea el operador && ?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> Cuando hay una operacion de sumas</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> Cuando es una operacion larga</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p43"> Cuando en una estructura condicional se disponen dos condiciones.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p44"> Cuando hay un proceso de almacenamiento</p>
+
+<p>¿Que es un acumulador?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> Es una variable especial que se incrementa y no decrenmenta con valores</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> Es un proceso de ejecucion</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> Es una variable que contine datos almacenados</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> Un tipo especial de variable que se incrementa o decrementa con valores variables durante la ejecución del programa</p>
+
+<p>¿Que nos permitirá manejar fechas y horas?.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p41"> Date</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p42"> text</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> button</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p44"> prompt</p>
+
+<p>¿Que nos facilita la herramienta function?.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p41"> reducir.aumentar el trabajo en programacion</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p42"> facilitar, reducir, dividir el trabajo en programación</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> facilitar, repartir, diseñar</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p44"> llenar variables,reducir variables, dividir codigos </p>
+<hr>
+<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+</body>
+</html>
